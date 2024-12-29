@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --navegação-bg-cor: rgba(255, 255, 255, .1);
+    /* --nav-bg-color */
+    --bg-cor: #171f2b;
+    /* --bg-color */
+    --segunda-cor-bg: #1f2733;
+    /* --second-br-color */
+    --terceira-cor-bg: #2d3542;
+    /* --third-bg-color */
+    --cor-principal: #0ef;
+    /* --main-color */
+    --cor-branca: #fff;
+    /* --white-color */
+    --cor-da-lista-de-guias: #7c8594;
+    /* --tab-list-color */
+}
+
+::selection {
+    background: var(--cor-principal);
+    color: var(--bg-cor);
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--cor-principal);
+    border-radius: 1rem;
+}
+
+::placeholder {
+    color: var(--cor-branca);
+}
+
+html {
+    font-style: 62.5%;
+}
+
+body {
+    color: var(--cor-branca);
+    overflow: hidden;
+    /* impede que as barras de rolagem sejam exibidas, mesmo quando necessárias. */
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.navegacao {
+    position: fixed;
+    /* irá fixar a posição do elemento na coordenada que você definir. */
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40rem;
+    padding: 2rem 0;
+    background: var(--navegação-bg-cor);
+    border-radius: 5rem;
+    z-index: 100;
+    /* especifica a ordem da pilha de um elemento do anúncio. */
+}
+
+.navegacao .lista-de-navegação {
+    display: flex;
+    /*O display: flex funciona de uma maneira diferente dos outros displays. Quando colocamos essa propriedade em um elemento, esse elemento se torna um flex container, a partir daí podemos manipular todos os elementos filhos desse flex container com propriedades novas. */
+    justify-content: space-evenly;
+    /*Esta propriedade define o alinhamento dos ítens ao longo do eixo principal. Ajuda a distribuir o espaço livre que sobrar no container tanto se todos os flex items em uma linha são inflexíveis, ou são flexíveis mas já atingiram seu tamanho máximo. */
+}
+
+.lista-de-navegação li {
+    position: relative;
+    display: flex;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.lista-de-navegação li:hover,
+.lista-de-navegação li.active {
+    color: var(--cor-principal);
+}
+
+.dica-de-ferramenta {
+    position: absolute;
+    top: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.3rem 1rem;
+    background: var(--cor-principal);
+    border-radius: .4rem;
+    font-size: 1.6rem;
+    color: var(--bg-cor);
+    font-weight: 500;
+    white-space: nowrap;
+    /* Recolhe os espaços em branco como no normal, mas suprime as quebras de linha (quebra de texto) no texto. */
+    visibility: hidden;
+    /* visibility:hidden deixa de mostrar o elemento, ou seja, ele deixa de ser visível na página mas seu espaço continua ocupado, ou seja, o layout da página não é alterado por causa disto. É como você apagasse uma luz ali mas a lâmpada continua lá. */
+    opacity: 0;
+    transition: .3s;
+}
+.lista-de-navegação li:hover .dica-de-ferramenta {
+    visibility: visible;
+    opacity: 1;
+}
