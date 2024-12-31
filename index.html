@@ -12,86 +12,93 @@
 </head>
 
 <body>
-
-    <!-- Barra de navegação -->
-    <nav class="navegacao">
-        <ul class="lista-de-navegação">
+    <!-- navbar -->
+    <nav class="nav">
+        <ul class="nav-list">
             <li class="active">
                 <i class="bx bx-home-alt"></i>
-                <span class="dica-de-ferramenta">
-                    Home
-                </span>
+                <span class="tooltip">Home</span>
             </li>
             <li>
                 <i class="bx bx-user"></i>
-                <span class="dica-de-ferramenta">
-                    Sobre
-                </span>
+                <span class="tooltip">About</span>
             </li>
             <li>
                 <i class="bx bx-detail"></i>
-                <span class="dica-de-ferramenta">
-                    Retomar
-                </span>
+                <span class="tooltip">Resume</span>
             </li>
             <li>
                 <i class="bx bx-briefcase"></i>
-                <span class="dica-de-ferramenta">
-                    Portfolio
-                </span>
+                <span class="tooltip">Portfólio</span>
             </li>
             <li>
                 <i class="bx bx-envelope"></i>
-                <span class="dica-de-ferramenta">
-                    Contato
-                </span>
+                <span class="tooltip">Contact</span>
             </li>
         </ul>
     </nav>
-    <section class="recipiente">
-        <section class="caixa">
-            <!-- Seção inicial -->
-            <section class="secao inicial">
-                <section class="informacoes-da-casa">
-                    <h3>Olá, eu sou</h3>
-                    <h1>Luís da Silveira</h1>
+    <div class="container">
+        <div class="box">
+            <!-- home section -->
+            <section class="section home">
+                <div class="home-info">
+                    <h3>Hello I'm</h3>
+                    <h1>Shane Theodor</h1>
                     <h3>Frontend Developer</h3>
-                    <p class="descricao">
-                        Como desenvolvedor frontend júnior, dedico-me a oferecer o melhor atendimento possível.
+                    <p class="desc">
+                        Como desenvolvedor frontend júnior, dedico-me a atender você da melhor forma possível.
                     </p>
-                    <section class="botao-sci">
-                        <a href="#" class="botao">Baixar currículo</a>
-                        <section class="sci">
+                    <div class="btn-sci">
+                        <a href="#" class="btn">Download CV</a>
+                        <div class="sci">
                             <a href="#">
                                 <i class="bx bxl-github"></i>
-                                <span class="dica-de-ferramenta">Github</span>
+                                <span class="tooltip">Github</span>
                             </a>
                             <a href="#">
                                 <i class="bx bxl-linkedin"></i>
-                                <span class="dica-de-ferramenta">Linkedin</span>
+                                <span class="tooltip">Linkedin</span>
                             </a>
                             <a href="#">
                                 <i class="bx bxl-twitter"></i>
-                                <span class="dica-de-ferramenta">Twitter</span>
+                                <span class="tooltip">Twitter</span>
                             </a>
                             <a href="#">
                                 <i class="bx bxl-instagram"></i>
-                                <span class="dica-de-ferramenta">Instagram</span>
+                                <span class="tooltip">Instagram</span>
                             </a>
-                        </section><!-- https://www.youtube.com/watch?v=ck3YJDDlgaw 20:24-->
-                    </section>
-                </section>
-                <section class="cobertura-imagem">
-
-                </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-wrapper">
+                    <div class="img-box home-img">
+                        <img src="imagens/img.png" alt="">
+                    </div>
+                </div>
             </section>
-            <!-- Seção Sobre -->
-            <!-- Seção de currículo (experiência, habilidades, educação) -->
-            <!-- Seção de portfólio (trabalho, serviço) -->
-            <!-- Seção de contato -->
-        </section>
-    </section>
-    <!-- Arquivo JavaScript Script -->
+            <!-- about section -->
+            <section class="section about">
+                <div class="img-wrapper">
+                    <div class="img-box about-img">
+                        <img src="imagens/img.png" alt="">
+                    </div>
+                </div>
+                <div class="about-info">
+                    <h2 class="title">About Me</h2>
+                    <h3>Frontend Developer!</h3>
+                    <p class="desc">
+                        Como desenvolvedor frontend júnior, dedico-me a atender você da melhor forma possível.
+                    </p>
+                    <a href="#" class="btn">View More</a>
+                </div>
+            </section>
+            <!-- resume (experience, skills, education) section -->
+            <!-- portfolio (work, service) section -->
+            <!-- contact section -->
+        </div>
+    </div>
+
+    <!-- JavaScript file script -->
     <script src="js/script.js"></script>
 </body>
 

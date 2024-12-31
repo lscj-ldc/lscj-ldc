@@ -13,25 +13,18 @@
 }
 
 :root {
-    --navegação-bg-cor: rgba(255, 255, 255, .1);
-    /* --nav-bg-color */
-    --bg-cor: #171f2b;
-    /* --bg-color */
-    --segunda-cor-bg: #1f2733;
-    /* --second-br-color */
-    --terceira-cor-bg: #2d3542;
-    /* --third-bg-color */
-    --cor-principal: #0ef;
-    /* --main-color */
-    --cor-branca: #fff;
-    /* --white-color */
-    --cor-da-lista-de-guias: #7c8594;
-    /* --tab-list-color */
+    --nav-bg-color: rgba(255, 255, 255, .1);
+    --bg-color: #171f2b;
+    --second-bg-color: #1f2733;
+    --third-bg-color: #2d3542;
+    --main-color: #0ef;
+    --white-color: #fff;
+    --tab-list-color: #7c8594;
 }
 
 ::selection {
-    background: var(--cor-principal);
-    color: var(--bg-cor);
+    background: var(--main-color);
+    color: var(--bg-color);
 }
 
 ::-webkit-scrollbar {
@@ -39,12 +32,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--cor-principal);
+    background: var(--main-color);
     border-radius: 1rem;
 }
 
 ::placeholder {
-    color: var(--cor-branca);
+    color: var(--white-color);
 }
 
 html {
@@ -52,7 +45,7 @@ html {
 }
 
 body {
-    color: var(--cor-branca);
+    color: var(--white-color);
     overflow: hidden;
     /* impede que as barras de rolagem sejam exibidas, mesmo quando necessárias. */
 }
@@ -61,28 +54,24 @@ p {
     font-size: 1.6rem;
 }
 
-.navegacao {
+.nav {
     position: fixed;
-    /* irá fixar a posição do elemento na coordenada que você definir. */
     bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
     width: 40rem;
     padding: 2rem 0;
-    background: var(--navegação-bg-cor);
+    background: var(--nav-bg-color);
     border-radius: 5rem;
     z-index: 100;
-    /* especifica a ordem da pilha de um elemento do anúncio. */
 }
 
-.navegacao .lista-de-navegação {
+.nav .nav-list {
     display: flex;
-    /*O display: flex funciona de uma maneira diferente dos outros displays. Quando colocamos essa propriedade em um elemento, esse elemento se torna um flex container, a partir daí podemos manipular todos os elementos filhos desse flex container com propriedades novas. */
     justify-content: space-evenly;
-    /*Esta propriedade define o alinhamento dos ítens ao longo do eixo principal. Ajuda a distribuir o espaço livre que sobrar no container tanto se todos os flex items em uma linha são inflexíveis, ou são flexíveis mas já atingiram seu tamanho máximo. */
 }
 
-.lista-de-navegação li {
+.nav-list li {
     position: relative;
     display: flex;
     font-size: 3rem;
@@ -90,30 +79,180 @@ p {
     transition: .3s;
 }
 
-.lista-de-navegação li:hover,
-.lista-de-navegação li.active {
-    color: var(--cor-principal);
+.nav-list li:hover,
+.nav-list li.active {
+    color: var(--main-color);
 }
 
-.dica-de-ferramenta {
+.tooltip {
     position: absolute;
     top: -4rem;
     left: 50%;
     transform: translateX(-50%);
     padding: 0.3rem 1rem;
-    background: var(--cor-principal);
+    background: var(--main-color);
     border-radius: .4rem;
     font-size: 1.6rem;
-    color: var(--bg-cor);
+    color: var(--bg-color);
     font-weight: 500;
     white-space: nowrap;
-    /* Recolhe os espaços em branco como no normal, mas suprime as quebras de linha (quebra de texto) no texto. */
     visibility: hidden;
-    /* visibility:hidden deixa de mostrar o elemento, ou seja, ele deixa de ser visível na página mas seu espaço continua ocupado, ou seja, o layout da página não é alterado por causa disto. É como você apagasse uma luz ali mas a lâmpada continua lá. */
     opacity: 0;
     transition: .3s;
 }
-.lista-de-navegação li:hover .dica-de-ferramenta {
+
+.nav-list li:hover .tooltip,
+a:hover .tooltip {
     visibility: visible;
     opacity: 1;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    perspective: 1500px;
+    perspective-origin: 50%;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50% -50vw;
+    transform: rotateY(-90deg);
+}
+
+.section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    padding: 0 10%;
+    backface-visibility: hidden;
+}
+
+.section:nth-child(even) {
+    background: var(--second-bg-color);
+}
+
+.section.about {
+    transform: translateX(50vw) translateZ(-50vw) rotateY(90deg);
+}
+
+.home,
+.about {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.home-info h1 {
+    font-size: 5.5rem;
+    color: var(--main-color);
+    line-height: 1;
+}
+
+.home-info h3 {
+    font-size: 3rem;
+}
+
+.desc {
+    margin: 1rem 0 2rem;
+}
+
+.home-info .btn-sci {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    display: inline-flex;
+    padding: 1.2rem 3rem;
+    background: var(--main-color);
+    border-radius: 5rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.home-info .btn-sci .sci {
+    margin-left: 2rem;
+}
+
+.home-info .btn-sci .sci a {
+    position: relative;
+    display: inline-flex;
+    padding: 0.8rem;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 0 0.8rem;
+    transition: .3s;
+}
+
+.home-info .btn-sci .sci a:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+.img-box {
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    background: linear-gradient(var(--bg-color), var(--main-color));
+    border-radius: 50%;
+    border: .5rem solid var(--main-color);
+    box-shadow: 0 0 2rem var(--main-color);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.img-box.home-img:hover {
+    box-shadow: 0 0 8rem var(--main-color);
+}
+
+.img-box img {
+    position: absolute;
+    top: 3rem;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+}
+
+.img-box.about-img {
+    background: transparent;
+    box-shadow: 0 0 2rem var(--main-color), inset 0 0 1rem var(--main-color);
+}
+
+.img-box.about-img img {
+    z-index: -1;
+}
+
+.title {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.about-info .title {
+    text-align: left;
+}
+
+.about-info h3 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-top: -1rem;
+}
+
+.about-info .btn {
+    padding: 1.2rem 4rem;
 }
