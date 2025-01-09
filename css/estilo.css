@@ -26,3 +26,7 @@
     font-size: 2em;
     padding: 5px;
 }
+.cabecalho>.menu-principal>.menu-link a {
+    color: var(--branco);
+    display: flex;
+}
