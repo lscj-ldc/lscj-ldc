@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --aqua: #00ffff;
+    --branco: #fff;
+    --preto: #000;
+}
+
+.cabecalho {
+    background: var(--aqua);
+}
+.cabecalho>.menu-principal>.logo {
+    display: flex;
+    color: var(--preto);
+    font-size: 2em;
+    padding: 5px;
+}
