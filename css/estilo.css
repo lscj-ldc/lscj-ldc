@@ -14,19 +14,75 @@
 :root {
     --aqua: #00ffff;
     --branco: #fff;
+    --cinza: #C0D8D8;
+    --bege: #FDFCCE;
+    --marron: #F07848;
+    --vermelho: #D83018;
     --preto: #000;
+    --preto-3a3232: #3A3232;
 }
 
-.cabecalho {
-    background: var(--aqua);
+/* menu principal */
+.nav {
+    background-color: var(--cinza);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-.cabecalho>.menu-principal>.logo {
+
+.nav ul {
+    width: 100%;
+    list-style: none;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav li {
+    height: 50px;
+}
+
+.nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
     color: var(--preto);
-    font-size: 2em;
-    padding: 5px;
 }
-.cabecalho>.menu-principal>.menu-link a {
+
+.nav a:hover {
+    background-color: var(--branco);
+}
+
+.nav li:first-child {
+    margin-right: auto;
+}
+
+.nav .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.nav .sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
     color: var(--branco);
-    display: flex;
+    background-color: var(--preto);
+}
+
+.nav .menu-button {
+    display: none;
 }

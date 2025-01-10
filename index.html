@@ -7,17 +7,32 @@
     <title>Studio lscj</title>
     <!-- Link do arquivo CSS -->
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <header class="cabecalho">
-        <section class="menu-principal">
-            <span class="logo">Studio lscj <br>Criação de Sites</span>
-            <section class="menu-link">
-                <a href="#">Agência</a>
-                <a href="#">Cases de Sucesso</a>
-            </section>
-        </section>
+        <nav class="nav">
+            <menu>
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><i class="bx bx-x"></i></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="fotos.html">Fotos</a></li>
+                    <li><a href="orcamento.html">Solicitar Orçamento</a></li>
+                </ul>
+                <ul class="menuList">
+                    <li><a href="index.html">Alisson Araujo</a></li>
+                    <li class="hideOnMobile"><a href="sobre.html">Sobre</a></li>
+                    <li class="hideOnMobile"><a href="servicos.html">Serviços</a></li>
+                    <li class="hideOnMobile"><a href="fotos.html">Fotos</a></li>
+                    <li class="hideOnMobile"><a href="orcamento.html">Solicitar Orçamento</a></li>
+                    <li class="menu-button" onclick="showSidebar()"><a href="#"><i class="bx bx-menu"></i></a></li>
+                </ul>
+            </menu>
+        </nav>
     </header>
     <!-- Link JavaScript -->
     <script src="js/script.js"></script>

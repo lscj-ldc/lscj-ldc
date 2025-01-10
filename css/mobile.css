@@ -1,0 +1,16 @@
+
+@media (max-width: 400px) {
+    .nav .sidebar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav .hideOnMobile {
+        display: none;
+    }
+
+    .nav .menu-button {
+        display: block;
+    }
+}
