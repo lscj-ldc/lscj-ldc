@@ -12,19 +12,17 @@
 }
 
 :root {
-    --aqua: #00ffff;
+    --aqua: #00fff0;
+    --aqua-escura: #29ccc1;
+    --aqua-perola: #3d6663;
+    --aqua-preta: #093330;
     --branco: #fff;
-    --cinza: #C0D8D8;
-    --bege: #FDFCCE;
-    --marron: #F07848;
-    --vermelho: #D83018;
     --preto: #000;
-    --preto-3a3232: #3A3232;
 }
 
 /* menu principal */
 .nav {
-    background-color: var(--cinza);
+    background-color: var(--aqua-escura);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -50,7 +48,8 @@
 }
 
 .nav a:hover {
-    background-color: var(--branco);
+    background-color: var(--aqua);
+    color: var(--preto);
 }
 
 .nav li:first-child {
