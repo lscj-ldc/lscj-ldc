@@ -17,12 +17,15 @@
     --aqua-perola: #3d6663;
     --aqua-preta: #093330;
     --branco: #fff;
+    --roxo: #071158;
+    --creme: #D1C5AD;
+    --ouro: #D18A0C;
     --preto: #000;
 }
 
 /* menu principal */
 .nav {
-    background-color: var(--aqua-escura);
+    background-color: var(--roxo);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -42,9 +45,11 @@
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
+    font-size: 1em;
     display: flex;
     align-items: center;
-    color: var(--preto);
+    color: var(--ouro);
+    font-weight: bold;
 }
 
 .nav a:hover {
