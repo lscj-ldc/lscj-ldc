@@ -91,9 +91,22 @@
     display: none;
 }
 /* primeira seção */
+.meu-trabalho {
+    display: flex;
+    align-items: center;
+}
 .meu-trabalho p {
     display: flex;
     text-align: justify;
     padding: 10px;
+    width: 900px;
     font-size: 1.6em;
+}
+
+.meu-trabalho img {
+    display: flex;
+    float: right;
+    padding: 10px;
+    width: 500px;
+    height: auto;
 }
