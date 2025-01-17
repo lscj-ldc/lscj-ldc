@@ -110,3 +110,53 @@
     width: 500px;
     height: auto;
 }
+
+/* logo */
+
+.cabecalho .um {
+    margin: auto;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    background-color: var(--preto);
+    width: 200px;
+    height: 50px;
+}
+.cabecalho>section>.um>.rum {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: #00fff0;
+}
+.cabecalho>section>.um>.rdois {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: #00fff0;
+}
+.cabecalho>section>.um>.rtres {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: #00fff0;
+}
+.cabecalho>section>.um>.rquatro {
+    display: flex;
+    width: 80px;
+    height: 10px;
+    border-radius: 5px;
+    margin: auto;
+    background-color: #00fff0;
+}
+.cabecalho>section>.dois {
+    margin: auto;
+    background-color: #00fff0;
+    width: 200px;
+    height: 80px;
+    border: 5px solid var(--preto);
+}
