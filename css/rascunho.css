@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+:root {
+    --aqua: #00fff0;
+    --aqua-escura: #29ccc1;
+    --aqua-perola: #3d6663;
+    --aqua-preta: #093330;
+    --branco: #fff;
+    --roxo: #071158;
+    --creme: #D1C5AD;
+    --ouro: #D18A0C;
+    --preto: #000;
+}
+
+/* logo */
+
+section .um {
+    margin: auto;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    background-color: var(--preto);
+    width: 208px;
+    height: 50px;
+}
+section>.um>.rum {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: #00fff0;
+}
+section>.um>.rdois {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: #00fff0;
+}
+section>.um>.rtres {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: #00fff0;
+}
+section>.um>.rquatro {
+    display: flex;
+    width: 80px;
+    height: 10px;
+    border-radius: 5px;
+    margin: auto;
+    background-color: #00fff0;
+}
+section>.dois {
+    margin: auto;
+    background-color: #00fff0;
+    width: 200px;
+    height: 200px;
+    border: 5px solid var(--preto);
+}
+section>.dois>.linha-um {
+    display: flex;
+    margin: 5px;
+    width: 180px;
+    height: 5px;
+    background-color: var(--preto);
+}
+section>.dois>.linha-dois {
+    display: inline-block;
+    margin: 5px;
+    width: 20px;
+    height: 5px;
+    background-color: var(--preto);
+}
+section>.dois>.linha-tres {
+    display: inline-block;
+    margin: 5px;
+    width: 20px;
+    height: 5px;
+    background-color: var(--preto);
+}
+section>.dois>.linha-sete>img {
+    display: flex;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+}
