@@ -70,6 +70,7 @@ section>.dois>.linha-um {
 }
 section>.dois>.linha-dois {
     display: inline-block;
+    transform: rotate(50deg);
     margin: 5px;
     width: 20px;
     height: 5px;
