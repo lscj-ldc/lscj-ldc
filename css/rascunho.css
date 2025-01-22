@@ -28,7 +28,7 @@ section>.um>.rum {
     height: 20px;
     border-radius: 50%;
     margin: auto;
-    background-color: #00fff0;
+    background-color: var(--ouro);
 }
 section>.um>.rdois {
     display: flex;
@@ -36,7 +36,7 @@ section>.um>.rdois {
     height: 20px;
     border-radius: 50%;
     margin: auto;
-    background-color: #00fff0;
+    background-color: var(--ouro);
 }
 section>.um>.rtres {
     display: flex;
@@ -44,7 +44,7 @@ section>.um>.rtres {
     height: 20px;
     border-radius: 50%;
     margin: auto;
-    background-color: #00fff0;
+    background-color: var(--ouro);
 }
 section>.um>.rquatro {
     display: flex;
@@ -52,40 +52,65 @@ section>.um>.rquatro {
     height: 10px;
     border-radius: 5px;
     margin: auto;
-    background-color: #00fff0;
+    background-color: var(--ouro);
 }
 section>.dois {
     margin: auto;
-    background-color: #00fff0;
+    background-color: var(--branco);
     width: 200px;
     height: 200px;
-    border: 5px solid var(--preto);
+    border: 5px solid var(--roxo);
 }
 section>.dois>.linha-um {
     display: flex;
     margin: 5px;
-    width: 180px;
+    width: 185px;
     height: 5px;
-    background-color: var(--preto);
+    background-color: var(--roxo);
 }
 section>.dois>.linha-dois {
     display: inline-block;
-    transform: rotate(50deg);
     margin: 5px;
-    width: 20px;
+    width: 85px;
     height: 5px;
-    background-color: var(--preto);
+    background-color: var(--roxo);
 }
 section>.dois>.linha-tres {
     display: inline-block;
     margin: 5px;
+    width: 85px;
+    height: 5px;
+    background-color: var(--roxo);
+}
+section>.dois>.linha-quatro {
+    display: inline-block;
+    margin: 5px;
     width: 20px;
     height: 5px;
-    background-color: var(--preto);
+    background-color: var(--roxo);
 }
-section>.dois>.linha-sete>img {
-    display: flex;
+section>.dois>.linha-cinco {
+    display: inline-block;
     margin: 5px;
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 5px;
+    background-color: var(--roxo);
+}
+section>.dois>.linha-seis {
+    display: inline-block;
+    margin: 5px;
+    width: 185px;
+    height: 5px;
+    background-color: var(--roxo);
+}
+section>.dois>.linha-sete {
+    display: inline-block;
+    margin: 5px;
+    width: 185px;
+    height: 5px;
+    background-color: var(--roxo);
+}
+section>.dois>.linha-oito {
+    text-align: center;
+    font-size: 1.5em;
 }
