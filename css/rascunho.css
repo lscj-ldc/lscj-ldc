@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 :root {
-    --aqua: #00fff0;
-    --aqua-escura: #29ccc1;
-    --aqua-perola: #3d6663;
-    --aqua-preta: #093330;
-    --branco: #fff;
     --roxo: #071158;
+    --roxo-claro: #9631EB;
+    --azul: #5931EB;
+    --azul-claro: #3180EB;
+    --rosa: #D331EB;
+    --branco: #fff;
     --creme: #D1C5AD;
     --ouro: #D18A0C;
     --preto: #000;

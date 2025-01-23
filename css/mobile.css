@@ -5,12 +5,19 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 804px) {
     .nav .hideOnMobile {
         display: none;
     }
 
     .nav .menu-button {
         display: block;
+    }
+    .meu-trabalho p {
+        font-size: 1em;
+    }
+    .meu-trabalho img {
+        width: 280px;
+        height: auto;
     }
 }
