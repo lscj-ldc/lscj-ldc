@@ -115,3 +115,20 @@
         height: auto;
     }
 }
+/* segunda seção */
+.detalhe-trabalho {
+    display: flex;
+    margin: auto;
+    max-width: 1200px;
+    text-align: justify;
+
+    & p {
+        display: flex;
+        margin: 10px;
+        width: 400px;
+        height: auto;
+    }
+    & span {
+        display: flex;
+    }
+}

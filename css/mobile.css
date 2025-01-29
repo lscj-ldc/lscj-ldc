@@ -20,4 +20,11 @@
         width: 280px;
         height: auto;
     }
+    .detalhe-trabalho {
+        flex-direction: column;
+    }
+    .detalhe-trabalho p {
+        padding: 10px;
+        margin: auto;
+    }
 }
