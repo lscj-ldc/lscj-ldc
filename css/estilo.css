@@ -93,7 +93,7 @@
 }
 
 /* primeira seção */
-.meu-trabalho {
+.primeira-secao-home {
     display: flex;
     margin: auto;
     align-items: center;
@@ -115,20 +115,16 @@
         height: auto;
     }
 }
-/* segunda seção */
-.detalhe-trabalho {
-    display: flex;
-    margin: auto;
-    max-width: 1200px;
-    text-align: justify;
+.segunda-secao-home {
 
-    & p {
+    & button {
         display: flex;
-        margin: 10px;
-        width: 400px;
+        background-color: var(--azul);
+        color: var(--branco);
+        width: auto;
+        margin: auto;
         height: auto;
-    }
-    & span {
-        display: flex;
+        padding: 10px;
+        border-radius: 5px;
     }
 }
